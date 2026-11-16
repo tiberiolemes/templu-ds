@@ -2,6 +2,7 @@
 :root {
   color-scheme: light;
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-size-min: .875rem;
   --brand-blue: #2d2cff;
   --brand-cyan: #29abe2;
   --brand-teal: #65c8d0;

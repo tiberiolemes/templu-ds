@@ -92,10 +92,10 @@ Poppins 400, 500, 600 e 700. Os arquivos locais e a licença ficam em `design-sy
 | H3 produto | 16 / 24 px | 500–600 | Grupo |
 | Corpo produto | 14 / 22 px | 400 | Tabelas e formulários reais |
 | Corpo site e e-mail | 16 / 24–28 px | 400 | Leitura prolongada |
-| Label | 12 / 18 px | 500 | Labels e metadados |
-| Caption | 12 / 18 px | 400 | Informação complementar |
+| Label | 14 / 22 px | 500 | Labels e metadados |
+| Caption | 14 / 22 px | 400 | Informação complementar |
 
-Usar rem com base de 16 px e respeitar zoom. Tracking de títulos entre -0.02em e -0.03em; corpo normal. Parágrafos de até 65–75 caracteres por linha. Valores financeiros alinhados à direita com `font-variant-numeric: tabular-nums`. Não diminuir texto operacional abaixo de 12 px. O mini produto do catálogo é uma maquete reduzida, não a escala final de uma aplicação.
+Usar rem com base de 16 px e respeitar zoom. Tracking de títulos entre -0.02em e -0.03em; corpo normal. Parágrafos de até 65–75 caracteres por linha. Valores financeiros alinhados à direita com `font-variant-numeric: tabular-nums`. O mínimo é 14 px em todos os textos, inclusive legendas, metadados, badges, código, exemplos, rodapés e mobile. Não reduzir a fonte para caber; ajustar espaçamento, quebra de linha ou layout. O token `--font-size-min: .875rem` equivale a 14 px com a base de 16 px, preservando zoom e preferências de leitura.
 
 ## Espaço, forma e profundidade
 

@@ -22,6 +22,12 @@ Copiar os dois arquivos para o projeto, ou ajustar os caminhos. Carregar as font
 
 Hexadecimais são valores CSS válidos para os tokens. Não envolver `var(--primary)` em `hsl()` ou `oklch()`: a variável já contém a cor inteira. Manter as classes semânticas, como `bg-background`, `text-muted-foreground`, `border-input` e `bg-primary`.
 
+## Mínimo de 14 px
+
+Todo texto do DS usa pelo menos 14 px, incluindo labels, legendas, badges, metadados, código e rodapés. `--font-size-min: .875rem` pressupõe a base de 16 px; não reduzir o tamanho da raiz nem escalar textos para contornar o mínimo.
+
+O mapeamento de `tailwind.css` redefine `text-xs` e `text-sm` para o mesmo piso de 14 px e entrelinha de 22 px. Isso cobre usos de `text-xs` nos componentes shadcn gerados. Não adicionar classes arbitrárias abaixo desse piso. Textos de apoio continuam distintos por peso, cor e espaço. Referência de configuração: [font-size do Tailwind](https://tailwindcss.com/docs/font-size).
+
 ## Usar os componentes de origem
 
 ```tsx
@@ -34,7 +40,7 @@ export function ExampleField() {
     <div className="grid gap-2">
       <Label htmlFor="name">Nome</Label>
       <Input id="name" aria-describedby="name-help" className="h-10 border-input" />
-      <p id="name-help" className="text-xs text-muted-foreground">
+      <p id="name-help" className="text-sm text-muted-foreground">
         Informe o nome como a pessoa prefere ser chamada.
       </p>
       <Button type="button" className="h-10 rounded-md hover:bg-primary-hover active:bg-primary-active">
@@ -60,7 +66,7 @@ O snippet ilustra a composição visual. A ação e a validação do formulário
 | Badge semântico | Estado | `bg-success-subtle text-success`, equivalentes warning/info/destructive |
 | Input / Select trigger | Campo | 40 px, 14 px, label persistente; `border-input`; mobile com alvo de 44 px |
 | Card | Painel | Borda ou sombra, raio 14 px e padding 24 px; sem card dentro de card |
-| Table / Data Table | Dados | 14 px; mínimo 12 px em metadados; célula de 48–56 px; cabeçalho 40 px |
+| Table / Data Table | Dados | 14 px; mínimo 14 px em metadados; célula de 48–56 px; cabeçalho 40 px |
 | Sidebar | Navegação | Tokens `sidebar-*`; 240 px desktop; Sheet no mobile |
 | Dialog / AlertDialog | Overlay | Raio 14 px; padding 24 px; backdrop; portal/top layer e restauração de foco |
 | Tooltip / DropdownMenu / Popover | Contexto | Tokens popover, foco/teclado da base; não recortar por overflow |

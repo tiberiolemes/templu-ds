@@ -14,6 +14,8 @@ Sistema de gerenciamento de igrejas e ministérios. Os materiais descrevem cuida
 
 Nome Templu e logotipo original preservados. O símbolo representa pessoas de mãos dadas, reunião, oração, nuvem/céu e Trindade, conforme o PDF de explicação da marca. Não redesenhar, substituir por ícone religioso genérico ou compor novamente a palavra com uma fonte.
 
+Regra de Tibério em 16/11/2026: nenhuma fonte abaixo de 14 px no design system, em todos os contextos e larguras.
+
 Pedido de Tibério em 16/11/2026: design system moderno, clean, baseado em shadcn, para sistema, site e comunicação da marca. Publicação dos arquivos autorizada em https://github.com/tiberiolemes/templu-ds.
 
 ## Stack

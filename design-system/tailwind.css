@@ -3,6 +3,11 @@
 @custom-variant dark (&:is(.dark *));
 @theme inline {
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  /* O mínimo Templu também vale para text-xs dos componentes shadcn. */
+  --text-xs: var(--font-size-min);
+  --text-xs--line-height: 1.375rem;
+  --text-sm: var(--font-size-min);
+  --text-sm--line-height: 1.375rem;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

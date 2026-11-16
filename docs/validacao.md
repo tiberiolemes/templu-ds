@@ -14,7 +14,7 @@ Corte: 16/11/2026. Escopo: documentação, tokens, catálogo estático, fontes e
 - Abas de aplicações alternaram por clique; seta direita levou Site a Comunicação.
 - Dialog abriu com foco em Cancelar; Escape fechou e devolveu o foco ao botão Excluir exemplo.
 - Ativos originais foram copiados sem redesenhar a assinatura. Poppins é local. E-mail usa PNG da assinatura para evitar depender de suporte a SVG em clientes de e-mail.
-- Revisão mecânica Impeccable executada. Os avisos sobre texto funcional pequeno motivaram elevar os textos do catálogo a pelo menos 12 px; a grade móvel recebeu correção de largura mínima. Avisos genéricos sobre padding de wrappers e containers não foram tratados como defeitos quando o filho já estabelece o espaço necessário.
+- Revisão mecânica Impeccable executada. Na versão inicial, os avisos sobre texto funcional pequeno motivaram elevar os textos a 12 px; a regra posterior de Tibério elevou o piso para 14 px em todos os contextos; a grade móvel recebeu correção de largura mínima. Avisos genéricos sobre padding de wrappers e containers não foram tratados como defeitos quando o filho já estabelece o espaço necessário.
 
 ## Limites da validação
 
@@ -44,3 +44,9 @@ Para revisar visualmente, executar o servidor conforme o README. O script estát
 Publicação solicitada por Tibério em 16/11/2026. Origem: raiz da branch `main`, modo de publicação nativo, com `.nojekyll`. A raiz redireciona para `design-system/index.html`, com caminhos relativos compatíveis com o prefixo `/templu-ds/`.
 
 Antes da publicação, foram repetidos o check estático e a validação sintática do JavaScript. O build nativo do Pages é o único processo de publicação necessário; não foi criada uma suíte adicional de CI. O resultado do build e as respostas HTTP públicas devem ser conferidos a cada publicação.
+
+## Atualização do mínimo tipográfico
+
+Em 16/11/2026, Tibério definiu que nenhum texto do DS pode ficar abaixo de 14 px. A regra foi aplicada ao catálogo, componentes, legendas, código, estados, rodapés e e-mail, além da escala documentada e do mapeamento `text-xs`/`text-sm` para Tailwind.
+
+A verificação local no Chromium mediu os tamanhos computados em 37 cenários: cinco larguras (320, 375, 768, 1024 e 1440 px), dois temas, os três painéis de aplicações, erro de campo, busca vazia, diálogo, toast e três larguras do e-mail. O menor tamanho encontrado foi 14 px, sem overflow horizontal da página, falhas de recursos ou erros de JavaScript. O check de integridade e os 57 pares de contraste continuam aprovados.

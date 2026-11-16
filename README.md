@@ -1,6 +1,6 @@
 # Templu Design System
 
-Uma linguagem moderna, clean e baseada em shadcn/ui para **sistema, site e comunicação da marca**. Identidade original preservada, Poppins, tokens semânticos e temas claro/escuro.
+Uma linguagem moderna, clean e baseada em shadcn/ui para **sistema, site e comunicação da marca**. Identidade original preservada, Poppins, mínimo tipográfico de 14 px em todos os contextos, tokens semânticos e temas claro/escuro.
 
 ## Explorar
 
