@@ -28,7 +28,7 @@ Não foram homologados leitor de tela, Gmail/Outlook, Safari/Firefox, dispositiv
 
 Risco principal: implementar os exemplos conceituais como se comprovassem módulos existentes. PRODUCT.md e o estudo dos materiais explicitam o limite. Os arquivos de origem com preço/trial conflitantes, retratos e e-book de terceiros não são redistribuídos.
 
-As verificações são locais e proporcionais ao escopo. Nenhum workflow de CI, job, deploy ou GitHub Pages é criado nesta entrega. Não há minutos de runner programados por este repositório.
+As verificações são locais e proporcionais ao escopo. Na entrega inicial, nenhum workflow de CI, job, deploy ou GitHub Pages foi criado. A hospedagem solicitada depois usa a publicação nativa do Pages descrita abaixo.
 
 ## Reproduzir o check estático
 
@@ -38,3 +38,9 @@ node --check design-system/catalog.js
 ```
 
 Para revisar visualmente, executar o servidor conforme o README. O script estático não substitui a revisão de layout e interação.
+
+## Hospedagem pelo GitHub Pages
+
+Publicação solicitada por Tibério em 16/11/2026. Origem: raiz da branch `main`, modo de publicação nativo, com `.nojekyll`. A raiz redireciona para `design-system/index.html`, com caminhos relativos compatíveis com o prefixo `/templu-ds/`.
+
+Antes da publicação, foram repetidos o check estático e a validação sintática do JavaScript. O build nativo do Pages é o único processo de publicação necessário; não foi criada uma suíte adicional de CI. O resultado do build e as respostas HTTP públicas devem ser conferidos a cada publicação.

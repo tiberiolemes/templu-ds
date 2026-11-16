@@ -4,6 +4,8 @@ Uma linguagem moderna, clean e baseada em shadcn/ui para **sistema, site e comun
 
 ## Explorar
 
+**[Abrir o Design System online](https://tiberiolemes.github.io/templu-ds/)**
+
 - [Catálogo visual](design-system/index.html): marca, fundamentos, componentes interativos e aplicações.
 - [Design system completo](DESIGN.md): decisões, regras, componentes, responsividade e acessibilidade.
 - [Tokens CSS](design-system/tokens.css) e [mapeamento Tailwind v4](design-system/tailwind.css).
@@ -32,6 +34,8 @@ A fonte primária da marca é o SVG original. O e-book encontrado nos materiais 
 
 ## Publicação e direitos
 
-Repositório solicitado: https://github.com/tiberiolemes/templu-ds. Envio de arquivos ao GitHub e hospedagem do catálogo são ações distintas. Este projeto não inclui workflow de deploy, GitHub Pages ou CI automática.
+Repositório: https://github.com/tiberiolemes/templu-ds.
+
+O catálogo é publicado pelo GitHub Pages em https://tiberiolemes.github.io/templu-ds/, a partir da raiz da branch `main`. O arquivo `.nojekyll` mantém os arquivos estáticos sem processamento pelo Jekyll. Novas alterações em `main` acionam a publicação nativa do Pages; não há workflow personalizado nem suíte de CI neste repositório.
 
 A marca e seus ativos pertencem aos respectivos titulares; não há concessão implícita de licença aberta para eles. Poppins é distribuída sob [SIL OFL 1.1](design-system/assets/fonts/OFL.txt). Fotografias, retratos de suporte, arquivo Illustrator e e-book de terceiros não são redistribuídos.
